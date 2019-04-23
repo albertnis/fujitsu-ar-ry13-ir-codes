@@ -31,7 +31,6 @@ def lirc2broadlink(pulses):
         else:
             array += bytearray([0x00])  # indicate next number is 2-bytes
             array += bytearray(struct.pack('>H', pulse))  # big endian (2-bytes)
-    print(len(array))
     packet = bytearray([0x26, 0x01])  # 0x26 = IR, 0x00 = no repeats
     packet += bytearray(struct.pack('<H', len(array)))  # little endian byte count
     packet += array
@@ -39,7 +38,6 @@ def lirc2broadlink(pulses):
 
     # Add 0s to make ultimate packet size a multiple of 16 for 128-bit AES encryption.
     remainder = (len(packet) + 4) % 16  # rm.send_data() adds 4-byte header (02 00 00 00)
-    print(len(packet))
     if remainder:
         packet += bytearray(16 - remainder)
 
@@ -51,7 +49,6 @@ if __name__ == '__main__':
     for code in sys.argv[1:]:
         pronto = bytearray.fromhex(code)
         print('ProntoBytes:')
-        print(pronto)
         print([hex(p)[2:] for p in pronto])
 
         pulses = pronto2lirc(pronto)
@@ -60,11 +57,7 @@ if __name__ == '__main__':
 
         packet = lirc2broadlink(pulses)
         print('Packet:')
-        print(packet)
         print([hex(p)[2:] for p in packet])
-
-        print('Hex packet:')
-        hexPacket = hexd.dump(packet)
 
         b64Packet = b64encode(packet)
         print('Base64 packet:')
