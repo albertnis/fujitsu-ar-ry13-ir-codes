@@ -97,12 +97,12 @@ if (require.main === module) {
     console.log('Pulses:')
     printArray(pulses)
 
-    packet = lirc2broadlink(pulses, 0x01)
+    packet = lirc2broadlink(pulses, 0x00)
     console.log('Packet:')
     printArray(packet.map(b => `'${b.toString(16)}'`))
 
     var b64Packet = b64encode(packet)
     console.log('Base64 packet:')
     console.log(b64Packet)
-  });
+  })
 }

@@ -1,0 +1,8 @@
+Real: JgB2AG4zDwsQCxAmDwwPJhALEAsPDA8mECYQCw8MDwsQJhAmDwsQCxALEAsPDA8MDwsQCxALEAsPDA8LEAsQJg8MDwsQCxALEAsPDA8LECYQCxALDwwPCxAmEAsPDA8LEAsQCxALDyYQCxAmECYPJhAmDyYQJhAADQUAAA==
+Mine: JgB2AGs1DScNJw0NDScNDQ0nDScNJw0NDQ0NJw0nDScNDQ0NDScNJw0nDScNJw0nDScNJw0nDScNJw0nDScNDQ0nDScNJw0nDScNJw0nDQ0NJw0nDScNJw0NDScNJw0nDScNJw0nDQ0NJw0NDQ0NDQ0NDQ0NDQ0AAQYNBQ==
+
+Real decoded bytes:
+[26, 00, 76, 00, 6e, 33, 0f, 0b, 10, 0b, 10, 26, 0f, 0c, 0f, 26, 10, 0b, 10, 0b, 0f, 0c, 0f, 26, 10, 26, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 26, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 0b, 10, 26, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 0b, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 26, 10, 0b, 10, 26, 10, 26, 0f, 26, 10, 26, 0f, 26, 10, 26, 10, 00, 0d, 05, 00, 00]
+
+My decoded bytes:
+[26, 00, 76, 00, 6e, 37, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 00, 01, 10, 0d, 05]
