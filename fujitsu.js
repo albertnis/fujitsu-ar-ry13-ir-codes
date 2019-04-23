@@ -114,10 +114,10 @@ function printArray(arr) {
 }
 
 if (require.main === module) {
-  var payload = makeFujitsuPayload(25, MODE.heat, FANSPEED.high, SWING.both)
+  var payload = makeFujitsuPayload(25, MODE.fan, FANSPEED.high, SWING.both)
 
   printArray(payload.map(b => `'${b.toString(16)}'`))
 
-  var payloadBin = addProntoMetadata(payload, 36.6e3, [0x7C, 0x3E], [0x10, 0x130], [0x10, 0x10], [0x10, 0x2E])
+  var payloadBin = addProntoMetadata(payload, 39e3, [0x7C, 0x3E], [0x10, 0x130], [0x10, 0x2E], [0x10, 0x10])
   console.log(payloadBin)
 }

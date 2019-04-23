@@ -1,0 +1,24 @@
+Key press: off
+
+Real: JgB2AG4zDwsQCxAmDwwPJhALEAsPDA8mECYQCw8MDwsQJhAmDwsQCxALEAsPDA8MDwsQCxALEAsPDA8LEAsQJg8MDwsQCxALEAsPDA8LECYQCxALDwwPCxAmEAsPDA8LEAsQCxALDyYQCxAmECYPJhAmDyYQJhAADQUAAA==
+Mine: JgB2AGs1DScNJw0NDScNDQ0nDScNJw0NDQ0NJw0nDScNDQ0NDScNJw0nDScNJw0nDScNJw0nDScNJw0nDScNDQ0nDScNJw0nDScNJw0nDQ0NJw0nDScNJw0NDScNJw0nDScNJw0nDQ0NJw0NDQ0NDQ0NDQ0NDQ0AAQYNBQ==
+Mine, 39kHz flipped one-zero: JgB2AGg0DQ0NDQ0mDQ0NJg0NDQ0NDQ0mDSYNDQ0NDQ0NJg0mDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NJg0NDQ0NDQ0NDQ0NDQ0NDSYNDQ0NDQ0NDQ0mDQ0NDQ0NDQ0NDQ0NDSYNDQ0mDSYNJg0mDSYNJg3/DQUAAA==
+39kHz flipped one-zero works!
+
+Real decoded bytes:
+[26, 00, 76, 00, 6e, 33, 0f, 0b, 10, 0b, 10, 26, 0f, 0c, 0f, 26, 10, 0b, 10, 0b, 0f, 0c, 0f, 26, 10, 26, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 26, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 0b, 10, 26, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 0b, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 26, 10, 0b, 10, 26, 10, 26, 0f, 26, 10, 26, 0f, 26, 10, 26, 10, 00, 0d, 05, 00, 00]
+
+39kHz, flipped one-zero
+[26, 00, 76, 00, 68, 34, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, ff, 0d, 05, 00, 00]
+
+38kHz, length fix
+[26, 00, 78, 00, 6b, 35, 0d, 27, 0d, 27, 0d, 0d, 0d, 27, 0d, 0d, 0d, 27, 0d, 27, 0d, 27, 0d, 0d, 0d, 0d, 0d, 27, 0d, 27, 0d, 27, 0d, 0d, 0d, 0d, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 0d, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 0d, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 0d, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 27, 0d, 0d, 0d, 27, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 00, 01, 06, 0d, 05]
+
+My decoded bytes (39kHz, length fix)
+[26, 00, 76, 00, 68, 34, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, ff, 0d, 05, 00, 00]
+
+My decoded bytes (39kHz):
+[26, 00, 74, 00, 68, 34, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, ff, 0d, 05, 00, 00]
+
+My decoded bytes (36kHz):
+[26, 00, 76, 00, 6e, 37, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 29, 0e, 0e, 0e, 29, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 0e, 00, 01, 10, 0d, 05]

@@ -25,7 +25,7 @@ function pronto2lirc(pronto) {
 function lirc2broadlink(pulses, repeats) {
   var payload = broadlinkEncodePayload(pulses)
 
-  var lengthBytes = bigEndianToLittleEndian(payload, 2);
+  var lengthBytes = bigEndianToLittleEndian(payload.length + 2, 2);
 
   var packet = []
   packet.push(0x26, repeats)
@@ -41,8 +41,8 @@ function lirc2broadlink(pulses, repeats) {
 
 }
 
-function bigEndianToLittleEndian(payload, nbytes) {
-  var lengthHexStrBE = pad(payload.length.toString(16), nbytes * 2); // Big endian (default)
+function bigEndianToLittleEndian(payloadLength, nbytes) {
+  var lengthHexStrBE = pad(payloadLength.toString(16), nbytes * 2); // Big endian (default)
   var lengthHexStrLE = lengthHexStrBE.split().reverse().join(""); // Little endian
 
   for (var leBytes = [], i = 0; i < lengthHexStrLE.length; i += 2) {
