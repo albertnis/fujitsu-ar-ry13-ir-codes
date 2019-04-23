@@ -30,7 +30,7 @@ function makeTemperatureCode(tempC) {
 }
 
 function makeChecksumCode(payload) {
-  return payload.slice(8, 16).reduce((acc, x, i) => {
+  return payload.slice(7, 15).reduce((acc, x, i) => {
     return acc + x
   })
 }
@@ -81,7 +81,7 @@ function addProntoMetadata(payload, frequency, leaderPair, trailerPair, onePair,
     payloadBinary += pad(payload[i].toString(2), 8)
   }
 
-  payloadBinary = "00101000110001100000000000001000000010000100000010111111"
+  //payloadBinary = "00101000110001100000000000001000000010000100000010111111"
   
   var oneHex = pad(onePair[0].toString(16), 4) + pad(onePair[1].toString(16), 4)
   var zeroHex = pad(zeroPair[0].toString(16), 4) + pad(zeroPair[1].toString(16), 4)
