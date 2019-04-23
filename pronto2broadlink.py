@@ -24,7 +24,7 @@ def lirc2broadlink(pulses):
     array = bytearray()
 
     for pulse in pulses:
-        pulse = (int)(pulse * 269 / 8192)  # 32.84ms units
+        pulse = (int)(pulse * 269 / 8192)  # Pulse lengths in 2^-15s units
 
         if pulse < 256:
             array += bytearray(struct.pack('>B', pulse))  # big endian (1-byte)
