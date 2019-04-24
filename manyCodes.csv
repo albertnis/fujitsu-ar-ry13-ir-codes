@@ -3,6 +3,7 @@ heat,16,auto,off,none,0,JgAGAWs2DgoQDQ4oDgoQKA4NDQ4NDg0oDycOChAODQ4NKA4oDgoQDQ4O
 cool,18,auto,off,none,0,JgAGAWw1Dg0NDg0oDg0NKA8MDg0NDg0pDicODQ4NDQ4NKA4oDg0NDg0NDg0NDg0ODg0NDQ4NDQ4NDg0ODQ0OKA4NDQ4NDg0NDg0ODQ0ODicODg0NDQ4NDg0oDigOKA4nDigOJw8nDigODQ0NDigODQ0ODQ0ODQ0ODQ4NDg0NDigOKA4MDg0ODQ0ODQ4NDg0NDigODQ0ODSgOCw8ODQ4ODQ0NDg0NDg0ODQ4NDQ4NDQ4NDg0ODQ0ODQ4NDQ4NDg0NDg0ODQ0ODQ4NDg0NDg0NDg0ODQ4NDQ4NDQ4NDg0ODQ4NDQ4NDQ4ODQ0ODQ0ODQ0ODSkODA4NDSkOJw8nDigODQ0NDg0NKQ4ADQUAAA==
 heat,18,quiet,off,none,0,JgAGAWs2DgsQDQ0oDg0NKA8MDg0NDg0oDycOChANDgwPKA4oDgoQChENDQ4NDg0ODg0NDg0NDQ4NDg4LDwsQKA4LDw4NDQ4NDg0NDg0ODSgOCw8ODQ4NDg0oDigOJw8nDigOJw4oDigODA4NDSkOChAMDw0NDg0PDA4NDA8NDigOKA4MDg4MDA8ODQ4NDA8NDigODQ4NDQ0ODQ0pDgoQDQ4NDQ4NDg0ODQ4NKA4NDQ4NDg0NDg0NDg0ODQ4NDQ4ODA4NDg0ODQ0OCxANDQ4NDg0ODQ4NCw8ODQ4NDg0ODQ0NDg4KEA4NDA8LEA0NDg0ODSgOCw8ODQ4ODQ0NDigODQ0MDw4NKA4ADQUAAA==
 heat,30,quiet,off,none,0,JgAGAXAyEAsQCxAlEAsQJhAKEQoQCxAmECUQCxALEAsQJRElEAsPDBAKEAsRChALEAsQChEKEQoQCxALEAsPJhALEAsPDBAKEQoQCxALECYQChEKEAsQCxAlESUQJhAlECYQJhAlECYQCxAKESUQCxALEAoQCxALDwwQCxAKESUQJhALEAoQCxALEAsQCw8MECUQJhAlEQoQCxAmEAoRChALDwwQCxAKEAwPJhALDwwQChEKEAsQCw8MEAoRChALEAsQCxAKEQoQCxALEAsQCxAKEQoQCxALEAsQChEKEAsQCxALEAoRChEKEAsQCxALECUQCw8MDwwQChALECYQCxAKESUQJhAADQUAAA==
+heat,30,quiet,off,none,1,JgAGAW4zDgwPDA4oDg0QJQ4NEAsNDg4nDycODRALDQ0PJw4oDg0QCg4NEAsODRALDQ0PDBALDg0QCw0NEAsOKA4NDg0ODA8MEAsNDhALDicODQ4NDg0ODRAlDigOJw4oDigOJw4oDicPDA4NDigQCg4NEAsODQ4NEAsODBALECYOKA4MEAsNKQ4NDgwQCw4NECYOJw4oDg0QChAmDg0QChEKDg0QCxALEAsQJQ8MEAsQCw0ODg0ODA4NEAsQCxALEAoQCw4NEAsNDhAKEAsODRALDg0ODQ4MEAsQCxALEAsNDRALDg0ODRALEAoPDA4NECYODRAKDigQJg4nDg0QCxALDSgQJg4ADQUAAA==
 heat,30,high,off,none,0,JgAGAW4zEAsQChElEAsQJhAKEQoQCxAmECUQCxALEAsQJRElEAsQChEKEQoQCxALEAoRChEKEAsQCxAKEQoRJRALEAsQChEKEQoQCxALECURChALEAsQCxAlESUQJhAlECYQJRElECYQChEKECYQCxAKEQoRChALEAsQChEKESUQJhAKEQoRChALEAsQChEKESUQJhAlEQoQCxAmEAoRChALDwwQChElEAsQCxAKEQoRChALEAsQCxAKEAsRCg8MEAsQChALEQoQCxALEAoQCxEKEAsPDA8MDwwQChEKDwwQCxAKEQoQCxALEAsPDBAKECYQCxALDyYQJhALECURChALECYQJRAADQUAAA==
 heat,30,high,off,both,0,JgAGAWw1EAoODg4nEAsNKQ4NDgwPDBAmDicQCw4NDg0OKA4nDg0NDg0ODgwODQ4NDg0NDg0NDwwODQ4NDg0NKBALDQ4ODQ0ODgwPDA4NECYQCg4NDg0QCw0pDyYOKBAlDycQJhAlECYQCg4ODicQCg4ODQ4ODA8MDg0ODQ4NDSgOKBALDQ4ODA4NEAoODg4NDSgQJhAlEAoPDQ4oEAsNDQ4NDg0ODQ0oEAsQCw0ODSgQJhAKEQsNDg4MDg0NDg4NDQ4PChEKEQsNDg4NEAoQCg8NDg0NDg4NDwsODQ0ODg0NDg4MDwwODQ4NDg0QCg4NDigQCxALDSgQJg4NDicQJhAKEQkPKBAADQUAAA==
 fan,30,high,off,both,0,JgAGAW8yDg0QCw4oEAoPJxALDQ4ODBAmDigODQ4MEAsQJg4nDwwODRALDQ4QChALDg0ODRALEAoODRALDg0QJg4MDwwQCxALEAsQCg8MECYODRAKDg0ODRAmDicPJw4oDicOKA4oDicODQ4NDicPDA4NDg0QCw0NDwwQCw4NDigOJw4NDg0ODQ4MEAsODQ4NDicPJw4oDicPJw4NEAsNDQ8MDg0QCw0oDwwQCxALDSkQJQ4NDg0PDA4MEAsQCxALDg0QCg4NEAsQCw0ODg0QCg4NDg0ODQ4NEAkPDQ4NEAsODRAKDg0QCxALDQ4ODRAKDigODRALEAoPDBAmECYOJw4NEAsNKA4ADQUAAA==
@@ -14,17 +15,68 @@ auto,30,high,off,both,0,JgAGAWw1Dg0ODQ4nDwwOKA4NEAoODQ4oDicPDA4NDg0OKA4nDg0ODQ4N
 heat,16,auto,off,none,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '00', '20', '00', '00', '00', '00', '04', '35']
 
+heat,17,quiet,off,none,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '08', '20', '20', '00', '00', '00', '04', '19']
+
 heat,18,quiet,off,none,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '04', '20', '20', '00', '00', '00', '04', '11']
+
+19
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '0c', '20', '20', '00', '00', '00', '04', '1e']
+
+20
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '02', '20', '20', '00', '00', '00', '04', '16']
+
+21
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '0a', '20', '20', '00', '00', '00', '04', '1a']
+
+22
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '06', '20', '20', '00', '00', '00', '04', '12']
+
+23
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '0e', '20', '20', '00', '00', '00', '04', '1c']
+
+24
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '01', '20', '20', '00', '00', '00', '04', '14']
+
+25
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '09', '20', '20', '00', '00', '00', '04', '18']
+
+26
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '05', '20', '20', '00', '00', '00', '04', '10']
+
+27
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '0d', '20', '20', '00', '00', '00', '04', '1f']
+
+28
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '03', '20', '20', '00', '00', '00', '04', '17']
+
+29
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '0b', '20', '20', '00', '00', '00', '04', '1b']
 
 heat,30,quiet,off,none,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '20', '00', '00', '00', '04', '13']
 
+heat,30,quiet,off,none,1
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '87', '20', '20', '00', '00', '00', '04', 'e3']
+
 heat,30,high,off,none,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '80', '00', '00', '00', '04', 'd3']
 
+med
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '40', '00', '00', '00', '04', '53']
+
+low
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', 'c0', '00', '00', '00', '04', '93']
+
 heat,30,high,off,both,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '8c', '00', '00', '00', '04', 'd9']
+
+horiz
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '84', '00', '00', '00', '04', 'd5']
+
+vert
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '88', '00', '00', '00', '04', 'dd']
 
 auto,30,high,off,both,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '00', '8c', '00', '00', '00', '04', 'f9']
@@ -32,7 +84,7 @@ auto,30,high,off,both,0
 dry,30,high,off,both,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '40', '0c', '00', '00', '00', '04', '79']
 
-cool,18,auto,off,none
+cool,18,auto,off,none,0
 ['28', 'c6', '00', '08', '08', '7f', '90', '0c', '04', '80', '00', '00', '00', '00', '04', 'f1']
 
 fan,30,high,off,both,0
