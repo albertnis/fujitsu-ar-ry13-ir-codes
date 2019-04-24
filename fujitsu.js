@@ -114,7 +114,7 @@ function printArray(arr) {
 }
 
 if (require.main === module) {
-  var payload = makeFujitsuPayload(25, MODE.fan, FANSPEED.high, SWING.both)
+  var payload = makeFujitsuPayload(25, MODE.heat, FANSPEED.high, SWING.off)
 
   printArray(payload.map(b => `'${b.toString(16)}'`))
 

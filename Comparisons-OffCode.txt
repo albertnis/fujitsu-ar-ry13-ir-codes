@@ -8,7 +8,7 @@ Mine, 39kHz flipped one-zero: JgB2AGg0DQ0NDQ0mDQ0NJg0NDQ0NDQ0mDSYNDQ0NDQ0NJg0mDQ
 Real decoded bytes:
 [26, 00, 76, 00, 6e, 33, 0f, 0b, 10, 0b, 10, 26, 0f, 0c, 0f, 26, 10, 0b, 10, 0b, 0f, 0c, 0f, 26, 10, 26, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 26, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 0b, 10, 26, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 0b, 10, 0b, 0f, 0c, 0f, 0b, 10, 26, 10, 0b, 0f, 0c, 0f, 0b, 10, 0b, 10, 0b, 10, 0b, 0f, 26, 10, 0b, 10, 26, 10, 26, 0f, 26, 10, 26, 0f, 26, 10, 26, 10, 00, 0d, 05, 00, 00]
 
-39kHz, flipped one-zero
+39kHz, flipped one-zero (WORKS)
 [26, 00, 76, 00, 68, 34, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 0d, 26, 0d, 0d, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, 26, 0d, ff, 0d, 05, 00, 00]
 
 38kHz, length fix
