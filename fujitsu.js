@@ -46,7 +46,8 @@ const PAYLOAD_OFF = [
 ]
 
 function makePowerCode(powerOn) {
-  return powerOn ? 0x8 : 0x0
+  console.log(powerOn)
+  return powerOn > 0 ? 0x8 : 0x0
 }
 
 function makeTemperatureCode(tempC) {
@@ -71,6 +72,7 @@ function makeFujitsuPayload(tempC, mode, fanSpeed, swingMode, powerOn) {
 
   // [9] On/off + Temp
   payload = [...payload, concatBytes(makePowerCode(powerOn), makeTemperatureCode(tempC))]
+  console.log(makePowerCode(powerOn))
 
   // [10] Master mode + Timer mode
   payload = [...payload, concatBytes(mode, 0x0)]
