@@ -87,6 +87,13 @@ function printArray(arr) {
   console.log(`[${arr.join(', ')}]`)
 }
 
+function pronto2broadlink(prontoStr) {
+  pronto = hexToBytes(prontoStr)
+  pulses = pronto2lirc(pronto)
+  packet = lirc2broadlink(pulses, 0x00)
+  return b64encode(packet)
+}
+
 if (require.main === module) {
   process.argv.slice(2).forEach(code => {
     pronto = hexToBytes(code)
@@ -107,4 +114,4 @@ if (require.main === module) {
   })
 }
 
-module.exports = {pronto2lirc, lirc2broadlink}
+module.exports = {pronto2lirc, lirc2broadlink, pronto2broadlink}

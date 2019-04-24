@@ -2,9 +2,10 @@
   "name": "ir-sandbox",
   "version": "1.0.0",
   "description": "Abrams' document has zero bit swapped with one bit. In reality one bit is 0010 002E and zero bit is 0010 0010.",
-  "main": "fujitsu.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

@@ -40,7 +40,7 @@ function makeFujitsuPayload(tempC, mode, fanSpeed, swingMode) {
   var payload = [0x28, 0xc6, 0x00, 0x08, 0x08, 0x7f, 0x90, 0x0c]
 
   // [9] Temp + On/off
-  payload = [...payload, concatBytes(0x1, makeTemperatureCode(tempC))]
+  payload = [...payload, concatBytes(0x0, makeTemperatureCode(tempC))]
 
   // [10] Timer + Master
   payload = [...payload, concatBytes(mode, 0x0)]
@@ -110,10 +110,12 @@ function printArray(arr) {
 }
 
 if (require.main === module) {
-  var payload = makeFujitsuPayload(23, MODE.fan, FANSPEED.quiet, SWING.both)
+  var payload = makeFujitsuPayload(23, MODE.fan, FANSPEED.high, SWING.both)
 
   printArray(payload.map(b => `'${b.toString(16)}'`))
 
   var payloadBin = addProntoMetadata(payload, 39e3, [0x7C, 0x3E], [0x10, 0x130], [0x10, 0x2E], [0x10, 0x10])
   console.log(payloadBin)
 }
+
+module.exports = {makeFujitsuPayload, addProntoMetadata, MODE, FANSPEED, SWING}
