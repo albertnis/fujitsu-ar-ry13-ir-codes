@@ -106,3 +106,5 @@ if (require.main === module) {
     console.log(b64Packet)
   })
 }
+
+module.exports = {pronto2lirc, lirc2broadlink}

@@ -8,11 +8,17 @@ function pad(num, size) {
   return s;
 }
 
+function base642bytes(base64Utf8String) {
+  return [...(Buffer.from(base64Utf8String, 'base64'))]
+}
+
 if (require.main === module) {
   process.argv.slice(2).forEach(b64 => {
-    var bytes = [...(Buffer.from(b64, 'base64'))]
+    var bytes = base642bytes(b64)
     console.log(bytes.length)
     printArray(bytes.map(b => `'${pad(b.toString(16),2)}'`))
     
   })
 }
+
+module.exports =  {base642bytes}
