@@ -4,7 +4,7 @@ const MODE = {
   auto: 0x0,
   cool: 0x8,
   dry: 0x4,
-  fan: 0xc,
+  fan_only: 0xc,
   heat: 0x2
 }
 
