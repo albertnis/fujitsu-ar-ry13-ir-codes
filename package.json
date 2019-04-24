@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/albertnis/ir-sandbox/issues"
   },
-  "homepage": "https://github.com/albertnis/ir-sandbox#readme"
+  "homepage": "https://github.com/albertnis/ir-sandbox#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {}
 }
