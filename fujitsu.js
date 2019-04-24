@@ -1,24 +1,22 @@
+const checksum = require('./makeChecksum')
+
 const MODE = {
   auto: 0x0,
-  cool: 0x1,
-  dry: 0x2,
-  fan: 0x3,
-  heat: 0x4
+  cool: 0x8,
+  dry: 0x4,
+  fan: 0xc,
+  heat: 0x2
 }
 
 const FANSPEED = {
   auto: 0x0,
-  high: 0x1,
-  medium: 0x2,
-  low: 0x3,
-  quiet: 0x4
+  high: 0x8,
+  quiet: 0x2
 }
 
 const SWING = {
   off: 0x0,
-  vertical: 0x1,
-  horizontal: 0x2,
-  both: 0x3
+  both: 0xc
 }
 
 function makeTemperatureCode(tempC) {
@@ -26,13 +24,11 @@ function makeTemperatureCode(tempC) {
   var temp = Math.round(tempC)
   temp = tempC > 30 ? 30 : tempC
   temp = tempC < 16 ? 16 : tempC
-  return temp - 15
+  return temp - 16
 }
 
 function makeChecksumCode(payload) {
-  return payload.slice(7, 15).reduce((acc, x, i) => {
-    return acc + x
-  })
+  return checksum.makeChecksum(payload)
 }
 
 function concatBytes(a, b) {
@@ -41,7 +37,7 @@ function concatBytes(a, b) {
 
 function makeFujitsuPayload(tempC, mode, fanSpeed, swingMode) {
   // [1-8] Codes M1, M2, P, C1, C2, D, U1, U2
-  var payload = [0x14, 0x63, 0x00, 0x10, 0x10, 0xFE, 0x09, 0x30]
+  var payload = [0x28, 0xc6, 0x00, 0x08, 0x08, 0x7f, 0x90, 0x0c]
 
   // [9] Temp + On/off
   payload = [...payload, concatBytes(0x1, makeTemperatureCode(tempC))]
@@ -62,7 +58,7 @@ function makeFujitsuPayload(tempC, mode, fanSpeed, swingMode) {
   payload = [...payload, 0x00]
 
   // [15] U3
-  payload = [...payload, 0x20]
+  payload = [...payload, 0x04]
 
   // [16] Checksum
   payload = [...payload, makeChecksumCode(payload)]
@@ -114,7 +110,7 @@ function printArray(arr) {
 }
 
 if (require.main === module) {
-  var payload = makeFujitsuPayload(25, MODE.heat, FANSPEED.high, SWING.off)
+  var payload = makeFujitsuPayload(23, MODE.fan, FANSPEED.quiet, SWING.both)
 
   printArray(payload.map(b => `'${b.toString(16)}'`))
 

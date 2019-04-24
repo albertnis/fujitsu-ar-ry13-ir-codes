@@ -1,0 +1,19 @@
+{
+  "name": "ir-sandbox",
+  "version": "1.0.0",
+  "description": "Abrams' document has zero bit swapped with one bit. In reality one bit is 0010 002E and zero bit is 0010 0010.",
+  "main": "fujitsu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertnis/ir-sandbox.git"
+  },
+  "author": "Albert Nisbet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertnis/ir-sandbox/issues"
+  },
+  "homepage": "https://github.com/albertnis/ir-sandbox#readme"
+}
