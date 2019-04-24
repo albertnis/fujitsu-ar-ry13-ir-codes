@@ -9,6 +9,31 @@ fan,30,high,off,both,0,JgAGAW8yDg0QCw4oEAoPJxALDQ4ODBAmDigODQ4MEAsQJg4nDwwODRALD
 dry,30,high,off,both,0,JgAGAW00Dg0ODQ4nDg0OKA4NDgwODQ4oDicPDA4NDg0OJw8nDg0ODQ4NDgwODQ4NDg0ODQ4MDwwODQ4NDg0OJw4NDg0ODQ4NDgwODQ4NDigODA8MDg0ODQ4nDycOKA4nDigOKA4nDigODQ4MDycODQ4NDg0ODA4NDg0ODQ4NDicOKA4NDgwPDA4NDg0ODQ4NDicOKA4nDwwOKA4NDgwPDA4NDg0ODQ4NDg0NDQ4NDigOJw4NDg0ODQ4MDwwODQ4NDg0ODQ4MDwwODQ4NDg0ODA8MDg0ODQ4NDg0ODA4NDg0ODQ4NDgwPDA4NDg0ODQ4MDycODQ4NDg0OJw4oDicPJw4NDg0OJw4ADQUAAA==
 auto,30,high,off,both,0,JgAGAWw1Dg0ODQ4nDwwOKA4NEAoODQ4oDicPDA4NDg0OKA4nDg0ODQ4NEAoODQ4NDg0ODQ8MDgwODQ4NDg0OJw8MEAsNDg4NDgwPDA4NDigODQ4MDg0ODQ4oDicOKA4nDycQJhAlECYODQ4NDicODQ4NDg0ODQ4MEAsODQ4NDicPJw4NDg0ODA8MDg0ODQ4NDicQJg4oDgwPDA4NDg0ODQ4MDwwODQ4oDgwPDA4NDigOJw8MDg0ODQ4NDgwPDBALEAsODQ4NDgwODQ4NDg0ODQ4MDwwODQ4NDg0ODA8MDg0ODQ4NDg0NDQ4NDg0ODQ4NDicODQ4NDicPJg8oDicOKA4NDg0OJw4ADQUAAA==
 
+   1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16
 
+heat,16,auto,off,none,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '00', '20', '00', '00', '00', '00', '04', '35']
 
+heat,18,quiet,off,none,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '04', '20', '20', '00', '00', '00', '04', '11']
 
+heat,30,quiet,off,none,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '20', '00', '00', '00', '04', '13']
+
+heat,30,high,off,none,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '80', '00', '00', '00', '04', 'd3']
+
+heat,30,high,off,both,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '20', '8c', '00', '00', '00', '04', 'd9']
+
+auto,30,high,off,both,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '00', '8c', '00', '00', '00', '04', 'f9']
+
+dry,30,high,off,both,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', '40', '0c', '00', '00', '00', '04', '79']
+
+cool,18,auto,off,none
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '04', '80', '00', '00', '00', '00', '04', 'f1']
+
+fan,30,high,off,both,0
+['28', 'c6', '00', '08', '08', '7f', '90', '0c', '07', 'c0', '8c', '00', '00', '00', '04', '39']
