@@ -158,7 +158,7 @@ Shown with example payloads for the unit in heat mode at 21degC, quiet fan, time
 ### Byte 16: Checksum
 There's a really good explanation [here][checksum-info]. AR-RY13 is the same, **but with bytes 9 - 15**. That is, `bytes[8:15]`. Basically the calculation is as follows:
 
-> 1. Reverse each of bytes 9 - 15 (e.g. 11100001 -> 10000111 for a single byte)
+> 1. Reverse each of bytes 9 - 15. e.g. 11100001 -> 10000111 (0xe1 -> 0x87) for a single byte
 > 2. Sum those reversed bytes
 > 3. Take result of (208 - sum) % 256
 > 4. Reverse bytes of result
