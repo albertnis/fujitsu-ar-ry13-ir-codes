@@ -12,7 +12,7 @@ const router = express.Router()
 const path = __dirname
 const port = 8080
 
-router.get('/code', function (req, res) {
+router.get('/broadlink', function (req, res) {
   let { tempC, mode, fanSpeed, swing, powerOn } = req.query
 
   var payload = makeFujitsuPayload(tempC, MODE[mode.toLowerCase()], FANSPEED[fanSpeed.toLowerCase()], SWING[swing.toLowerCase()], powerOn)
@@ -22,6 +22,16 @@ router.get('/code', function (req, res) {
   var b64 = pronto2broadlink(pronto)
 
   res.end(b64)
+})
+
+router.get('/pronto', function (req, res) {
+  let { tempC, mode, fanSpeed, swing, powerOn } = req.query
+
+  var payload = makeFujitsuPayload(tempC, MODE[mode.toLowerCase()], FANSPEED[fanSpeed.toLowerCase()], SWING[swing.toLowerCase()], powerOn)
+  
+  var pronto = addProntoMetadata(payload, 39e3, [0x7C, 0x3E], [0x10, 0x130], [0x10, 0x2E], [0x10, 0x10])
+
+  res.end(pronto)
 })
 
 app.use(express.static(path));
