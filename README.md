@@ -41,7 +41,7 @@ A pronto packet consists of the following data:
 
 - **Pronto preamble**: Four words declaring frequency and payload length. I've declared the length in the fourth word but it could/should probably be in the third as it is non-repeating. Usually will look something like `0000 006a 0000 0082` but make sure it reflects the true payload length.
 - **Leader**: As table above `007c 003e`.
-- **Payload**: An [off payload](off-payload) (7 bytes) or a [set vane payload](set-vane-payload) (7 bytes) or a [state payload](state-payload) (16 bytes). Encoded using the bit mappings in the table above.
+- **Payload**: An [off payload](#off-payload) (7 bytes) or a [set vane payload](#set-vane-payload) (7 bytes) or a [state payload](#state-payload) (16 bytes). Encoded using the bit mappings in the table above.
 - **Trailer**: As table above `0010 0130`.
 
 Remote central has a [great write-up][pronto-info] on pronto codes if you're interested in learning more.
