@@ -80,16 +80,16 @@ Shown with example payloads for the unit in heat mode at 21degC, quiet fan, time
 | 6  | Constant 0x7f | 0x7f
 | 7  | Constant 0x90 | 0x90
 | 8  | Constant 0x0c | 0x0c
-| 9  | [State, Temperature](#word-9:-state-+-temp) | 0x0a
-| 10 | [Master mode, Timer mode](#word-10:-master-mode-+-timer-mode) | 0x20
-| 11 | [Fan mode, Swing mode](#word-11:-fan-+-swing) | 0x20
+| 9  | [State, Temperature](#byte-9-state-temp) | 0x0a
+| 10 | [Master mode, Timer mode](#byte-10-master-mode-timer-mode) | 0x20
+| 11 | [Fan mode, Swing mode](#byte-11-fan-swing) | 0x20
 | 12 | Timer setting (unknown) | 0x00
 | 13 | Timer setting (unknown) | 0x00
 | 14 | Timer setting (unknown) | 0x00
 | 15 | Constant 0x04 | 0x04
-| 16 | [Checksum](#word-16:-checksum) | 0x1a
+| 16 | [Checksum](#byte-16-checksum) | 0x1a
 
-### Byte 9: State + temp
+### Byte 9: State, temp
 
 | Nibble 1 | State |
 | --- | --- |
@@ -118,7 +118,7 @@ Shown with example payloads for the unit in heat mode at 21degC, quiet fan, time
 
 > Example: If byte 9 is **0x8c**, that means the heatpump is being newly turned on to a temperature of 19°C
 
-### Byte 10: Master mode + timer mode
+### Byte 10: Master mode, timer mode
 | Nibble 1 | Master mode |
 | --- | --- |
 | 0x0 | auto |
@@ -135,7 +135,7 @@ Shown with example payloads for the unit in heat mode at 21degC, quiet fan, time
 
 > Example: If byte 10 is **0x20**, that means the heatpump will be in heat mode with no timer enabled.
 
-### Byte 11: Fan + swing
+### Byte 11: Fan, swing
 | Nibble 1 | Fan mode |
 | --- | --- |
 | 0x0 | auto |
