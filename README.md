@@ -70,24 +70,26 @@ There are a couple of payloads specified in Abrams' document. I haven't tested t
 
 Shown with example payloads for the unit in heat mode at 21degC, quiet fan, timer off, no swing, power already on.
 
-| Byte number | Contents | Example
-| ---: | --- | --- |
-| 1  | Constant 0x28 | 0x28
-| 2  | Constant 0xc6 | 0xc6
-| 3  | Constant 0x00 | 0x00
-| 4  | Constant 0x08 | 0x08
-| 5  | Constant 0x08 | 0x08
-| 6  | Constant 0x7f | 0x7f
-| 7  | Constant 0x90 | 0x90
-| 8  | Constant 0x0c | 0x0c
-| 9  | [State, Temperature](#byte-9-state-temp) | 0x0a
-| 10 | [Master mode, Timer mode](#byte-10-master-mode-timer-mode) | 0x20
-| 11 | [Fan mode, Swing mode](#byte-11-fan-swing) | 0x20
-| 12 | Timer setting (unknown) | 0x00
-| 13 | Timer setting (unknown) | 0x00
-| 14 | Timer setting (unknown) | 0x00
-| 15 | Constant 0x04 | 0x04
-| 16 | [Checksum](#byte-16-checksum) | 0x1a
+| Byte number | Contents |
+| ---: | --- |
+| 1  | Constant 0x28 |
+| 2  | Constant 0xc6 |
+| 3  | Constant 0x00 |
+| 4  | Constant 0x08 |
+| 5  | Constant 0x08 |
+| 6  | Constant 0x7f |
+| 7  | Constant 0x90 |
+| 8  | Constant 0x0c |
+| 9  | [State, Temperature](#byte-9-state-temp) |
+| 10 | [Master mode, Timer mode](#byte-10-master-mode-timer-mode) |
+| 11 | [Fan mode, Swing mode](#byte-11-fan-swing) |
+| 12 | Timer setting (0x00)* |
+| 13 | Timer setting (0x00)* |
+| 14 | Timer setting (0x00)* |
+| 15 | Constant 0x04 |
+| 16 | [Checksum](#byte-16-checksum) |
+
+**NB: I personally don't care about timer settings so haven't worked these codes out. 0x00 works fine for timer disabled.*
 
 ### Byte 9: State, temp
 
@@ -167,3 +169,44 @@ There's a really good explanation [here][checksum-info]. AR-RY13 is the same, **
 [fujitsu-reverse]: http://files.remotecentral.com/library/21-1/fujitsu/air_conditioner/index.html 
 [rm-mini]: http://www.ibroadlink.com/rmMini3/
 [p2b]: https://www.reddit.com/r/homeautomation/comments/7m7ddv/broadlink_ir_database/dru77am/
+
+## Example
+
+### State
+
+Heat mode, 22°C, quiet fan, timer off, no swing. Power is already on (this is not a power-on command)
+
+### Bytes
+
+| Byte | Value | Description
+| ---: | --- | --- |
+| 1  | 0x28 | Constant
+| 2  | 0xc6 | Constant
+| 3  | 0x00 | Constant
+| 4  | 0x08 | Constant
+| 5  | 0x08 | Constant
+| 6  | 0x7f | Constant
+| 7  | 0x90 | Constant
+| 8  | 0x0c | Constant
+| 9  | 0x06 | Power already on, temperature 22°C
+| 10 | 0x20 | Heat mode, timer off
+| 11 | 0x20 | Quiet fan, no swing
+| 12 | 0x00 | Timer setting (unknown)
+| 13 | 0x00 | Timer setting (unknown)
+| 14 | 0x00 | Timer setting (unknown)
+| 15 | 0x04 | Constant
+| 16 | 0x12 | Checksum
+
+So bytes are `['28', 'c6', '00', '08', '08', '7f', '90', '0c', '06', '20', '20', '00', '00', '00', '04', '12']`
+
+### Pronto
+
+```
+0000 006a 0000 0082 007c 003e 0010 0010 0010 0010 0010 002e 0010 0010 0010 002e 0010 0010 0010 0010 0010 0010 0010 002e 0010 002e 0010 0010 0010 0010 0010 0010 0010 002e 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 002e 0010 002e 0010 002e 0010 002e 0010 002e 0010 002e 0010 002e 0010 0010 0010 0010 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 002e 0010 0010 0010 0010 0010 0010 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 0010 002e 0010 0010 0010 0010 0010 002e 0010 0010 0010 0130
+```
+
+### Broadlink (base64)
+
+```
+JgAGAWg0DQ0NDQ0mDQ0NJg0NDQ0NDQ0mDSYNDQ0NDQ0NJg0mDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NJg0NDQ0NDQ0NDQ0NDQ0NDSYNDQ0NDQ0NDQ0mDSYNJg0mDSYNJg0mDSYNDQ0NDSYNDQ0NDQ0NDQ0NDQ0NDQ0NDSYNJg0NDQ0NDQ0NDQ0NDQ0NDSYNJg0NDQ0NDQ0mDQ0NDQ0NDQ0NDQ0NDQ0NJg0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDSYNDQ0NDQ0NDQ0NDSYNDQ0NDSYNDQ3/DQUAAA==
+```
