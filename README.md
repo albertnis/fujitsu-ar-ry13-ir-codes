@@ -22,6 +22,8 @@ Tools for generating AR-RY13 packets for Fujitsu heatpumps and for conversion fr
 
 # Fujitsu AR-RY13 protocol
 
+None of this would be possible without a document created by David Abrams which reverse-engineers the very similar AR-RY16 remote control. It's great stuff and you should check it out at [Remote Central][fujitsu-reverse].
+
 Frequency: 39kHz (period 25.6μs) (pronto `006a`)
 
 | Data bit | n cycles on | ...then n cycles off | Pronto
