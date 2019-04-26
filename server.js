@@ -1,9 +1,9 @@
 const express = require('express')
 
-const fuj = require('./fujitsu')
+const fuj = require('./src-js/fujitsu')
 const { makeFujitsuPayload, addProntoMetadata, MODE, FANSPEED, SWING } = fuj
 
-const p2b = require('./pronto2broadlink')
+const p2b = require('./src-js/pronto2broadlink')
 const { pronto2broadlink } = p2b
 
 const app = express()
