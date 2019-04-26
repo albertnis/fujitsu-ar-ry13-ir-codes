@@ -68,7 +68,7 @@ There are a couple of payloads specified in Abrams' document. I haven't tested t
 
 ## State payload
 
-Shown with example payloads for the unit in heat mode at 21degC, quiet fan, timer off, no swing, power already on.
+Some bytes are constants; in some bytes each nibble has significance.
 
 | Byte number | Contents |
 | ---: | --- |
