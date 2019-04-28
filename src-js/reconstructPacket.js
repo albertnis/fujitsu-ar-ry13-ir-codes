@@ -1,13 +1,14 @@
 var base2byte = require('./base642bytes')
 
 function trimWaffle(bytes) {
-  return bytes.slice(6, bytes.length - 6)
+  return bytes.slice(8, bytes.length - 4)
 }
 
-function normaliseBytes(bytes, threshold) {
+function normaliseBytes(bytes) {
   return bytes.map(b => {
-    var bNum = parseInt(b, 16)
-    return bNum > threshold ? '26' : '0d'
+    if (b > 0x30) return 0x35
+    if (b > 0x12) return 0x15
+    return 0x10
   })
 }
 
@@ -24,21 +25,25 @@ function printArray(arr) {
 if (require.main === module) {
   process.argv.slice(2).forEach(b64 => {
     var bytes = base2byte.base642bytes(b64)
+    
     bytes = trimWaffle(bytes)
-    bytes = normaliseBytes(bytes, 0x15)
+    //printArray(bytes.map(b => `'${pad(b.toString(16),2)}'`))
+    //printArray(bytes.map(b => `'${pad(b.toString(16),2)}'`))
+    //bytes = normaliseBytes(bytes)
+    //console.log(bytes)
     printArray(bytes.map(b => `'${pad(b.toString(16),2)}'`))
     console.log(bytes.length)
     
     for (var rBin = "", i = 0; i < bytes.length; i += 2) {
-      if (bytes[i + 1] === '26') {
+      if (bytes[i + 1]/bytes[i] > 2) {
         rBin += '1'
-      } else if (bytes[i + 1] === '0d') {
+      } else {
         rBin += '0'
       }
     }
 
-    console.log(rBin)
-    console.log(rBin.length)
+    //console.log(rBin)
+    //console.log(rBin.length)
     
     for (var rHex = [], i = 0; i < rBin.length; i += 8) {
       var byte = rBin.substr(i, 8)

@@ -114,4 +114,4 @@ if (require.main === module) {
   })
 }
 
-module.exports = {pronto2lirc, lirc2broadlink, pronto2broadlink}
+module.exports = {pronto2lirc, lirc2broadlink, pronto2broadlink, b64encode}
