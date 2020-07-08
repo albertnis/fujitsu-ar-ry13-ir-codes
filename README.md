@@ -98,27 +98,27 @@ Some bytes are constants; in some bytes each nibble has significance.
 | 0x0 | Heatpump currently on |
 | 0x8 | Heatpump currently off (turn it on) |
 
-| Nibble 2 | Temperature (°C) |
-| --- | --- |
-| 0x0 | 16 |
-| 0x8 | 17 |
-| 0x4 | 18 |
-| 0xc | 19 |
-| 0x2 | 20 |
-| 0xa | 21 |
-| 0x6 | 22 |
-| 0xe | 23 |
-| 0x1 | 24 |
-| 0x9 | 25 |
-| 0x5 | 26 |
-| 0xd | 27 |
-| 0x3 | 28 |
-| 0xb | 29 |
-| 0x7 | 30 |
-
-*NB: I have no idea how this would change for farenheit settings.*
+| Nibble 2 | Temperature (°C) | Temperature (°F)
+| --- | --- | ---
+| 0x0 | 16 | 58
+| 0x8 | 17 | 60
+| 0x4 | 18 | 62
+| 0xc | 19 | 66
+| 0x2 | 20 | 68
+| 0xa | 21 | 70
+| 0x6 | 22 | 72
+| 0xe | 23 | 74
+| 0x1 | 24 | 76
+| 0x9 | 25 | 78
+| 0x5 | 26 | 80
+| 0xd | 27 | 82
+| 0x3 | 28 | 84
+| 0xb | 29 | 86
+| 0x7 | 30 | 88
 
 > Example: If byte 9 is **0x8c**, that means the heatpump is being newly turned on to a temperature of 19°C
+
+_Side note: Why these payload values? Well, these values should probably be interpreted as little-endian - in other words, if you reverse these nibbles you get 0x0, 0x1, 0x2, 0x3 etc. You'll notice many of the other nibbles follow the same pattern. I've kept them written as big-endian because I think it makes them a bit simpler to understand in the context of the full payload - plus it would be a bit of work to change everything over to little-endian. Thanks [sandeen](https://github.com/sandeen) for the tip ([#1](https://github.com/albertnis/fujitsu-ar-ry13-ir-codes/issues/1))._
 
 ### Byte 10: Master mode, timer mode
 | Nibble 1 | Master mode |
