@@ -1,5 +1,7 @@
-*.py
+src-py/
 *.txt
 *.csv
+.git
+node_modules
 
 npm-debug.log

@@ -1,24 +1,13 @@
 # AR-RY13 sandbox
 
-Tools for generating AR-RY13 packets for Fujitsu heatpumps and for conversion from pronto to Broadlink packets. Code is written in Python 3 and also ported to JavaScript.
+Tools for generating AR-RY13 packets for Fujitsu heatpumps and for conversion from pronto to Broadlink packets.
 
-## Running the code
+There are four components in this repository:
 
-1. Start the server.
-
-   ```sh
-   yarn start
-   ```
-
-2. Hit the controller for either pronto or broadlink formats.
-
-   ```sh
-   curl "http://localhost:8080/pronto?tempC=18&mode=heat&fanSpeed=Quiet&swing=Off&powerOn=0"
-   ```
-
-   ```sh
-   curl "http://localhost:8080/broadlink?tempC=18&mode=heat&fanSpeed=Quiet&swing=Off&powerOn=0"
-   ```
+1. [Unofficial (reverse engineered) documentation for AR-RY13](#fujitsu-ar-ry13-protocol)
+1. [Python code](./src-py): Convert IR codes from Pronto to Broadlink
+1. [JavaScript code](./src-js): Convert IR codes from Pronto to Broadlink packets, and generate codes for AR-RY13
+1. [A simple web server](./src-js) which will generate an IR code for AR-RY13 in either Pronto or Broadlink format
 
 # Fujitsu AR-RY13 protocol
 
