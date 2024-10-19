@@ -8,7 +8,7 @@
      MODE[mode.toLowerCase()],
      FANSPEED[fanSpeed.toLowerCase()],
      SWING[swing.toLowerCase()],
-     powerOn
+     powerOn,
    )
    ```
 
@@ -21,7 +21,7 @@
      [0x7c, 0x3e],
      [0x10, 0x130],
      [0x10, 0x2e],
-     [0x10, 0x10]
+     [0x10, 0x10],
    )
    ```
 
@@ -35,7 +35,7 @@
 
 The web server can be called with parameters to send to the heatpump. The response will contain the IR code to send to the heatpump to achieve these parameters.
 
-For example, if the server is running at `localhost:8080`:
+By default, the server runs at `localhost:8080`:
 
 ```sh
 # Get pronto format
@@ -45,18 +45,18 @@ curl "http://localhost:8080/pronto?tempC=18&mode=heat&fanSpeed=Quiet&swing=Off&p
 curl "http://localhost:8080/broadlink?tempC=18&mode=heat&fanSpeed=Quiet&swing=Off&powerOn=0"
 ```
 
-## Run it with Node
+## Run it with Bun
 
-1. Install express
+1. Install dev dependencies, if required
 
    ```sh
-   yarn install
+   bun install
    ```
 
 1. Start the server.
 
    ```sh
-   yarn start
+   bun start
    ```
 
 ## Run it with Docker
@@ -64,11 +64,11 @@ curl "http://localhost:8080/broadlink?tempC=18&mode=heat&fanSpeed=Quiet&swing=Of
 1. Build it
 
    ```sh
-   docker build -t ar-ry13 .
+   docker build -t ir-codes .
    ```
 
 1. Run it
 
    ```sh
-   docker run -it -p 8080:8080 ar-ry13
+   docker run -it -p 8080:8080 ir-codes
    ```
