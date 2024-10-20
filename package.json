@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/albertnis/ir-codes#readme",
   "devDependencies": {
-    "@types/bun": "^1.1.11",
+    "@types/bun": "latest",
     "prettier": "^3.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
