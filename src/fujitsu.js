@@ -1,28 +1,5 @@
 import { makeChecksum } from './makeChecksum'
 
-export const MODE = {
-  auto: 0x0,
-  cool: 0x8,
-  dry: 0x4,
-  fan_only: 0xc,
-  heat: 0x2,
-}
-
-export const FANSPEED = {
-  auto: 0x0,
-  high: 0x8,
-  med: 0x4,
-  low: 0xc,
-  quiet: 0x2,
-}
-
-export const SWING = {
-  off: 0x0,
-  horizontal: 0x4,
-  vertical: 0x8,
-  both: 0xc,
-}
-
 const TEMPERATURE = {
   16: 0x0,
   17: 0x8,
@@ -40,8 +17,6 @@ const TEMPERATURE = {
   29: 0xb,
   30: 0x7,
 }
-
-const PAYLOAD_OFF = [0x28, 0xc6, 0x00, 0x08, 0x08, 0x40, 0xc0]
 
 const makePowerCode = (powerOn) => (powerOn > 0 ? 0x8 : 0x0)
 
@@ -62,7 +37,7 @@ export const makeFujitsuPayload = (
   mode,
   fanSpeed,
   swingMode,
-  powerOn
+  powerOn,
 ) => {
   // [1-8] Codes M1, M2, P, C1, C2, D, U1, U2
   var payload = [0x28, 0xc6, 0x00, 0x08, 0x08, 0x7f, 0x90, 0x0c]
@@ -109,7 +84,7 @@ export const addProntoMetadata = (
   leaderPair,
   trailerPair,
   onePair,
-  zeroPair
+  zeroPair,
 ) => {
   for (var payloadBinary = '', i = 0; i < payload.length; i++) {
     payloadBinary += pad(payload[i].toString(2), 8)

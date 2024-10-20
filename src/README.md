@@ -39,15 +39,15 @@ By default, the server runs at `localhost:8080`:
 
 ```sh
 # Get pronto format
-curl "http://localhost:8080/pronto?tempC=18&mode=heat&fanSpeed=Quiet&swing=Off&powerOn=0"
+curl -Li "http://localhost:8080/code?device=fujitsu-ar-ry13&temperatureCelsius=18&mode=heat&fanSpeed=quiet&swing=off&previousPower=off&power=on&format=pronto"
 
 # Get broadlink format
-curl "http://localhost:8080/broadlink?tempC=18&mode=heat&fanSpeed=Quiet&swing=Off&powerOn=0"
+curl -Li "http://localhost:8080/code?device=fujitsu-ar-ry13&temperatureCelsius=18&mode=heat&fanSpeed=quiet&swing=off&previousPower=off&power=on&format=broadlink"
 ```
 
 ## Run it with Bun
 
-1. Install dev dependencies, if required
+1. Install dependencies
 
    ```sh
    bun install
