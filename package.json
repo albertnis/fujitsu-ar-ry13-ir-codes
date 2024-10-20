@@ -1,24 +1,24 @@
 {
-  "name": "ir-sandbox",
+  "name": "ir-codes",
   "version": "1.0.0",
   "description": "Abrams' document has zero bit swapped with one bit. In reality one bit is 0010 002E and zero bit is 0010 0010.",
   "main": "src-js/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src-js/server.js"
+    "test": "bun test",
+    "start": "bun src-js/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/albertnis/ir-sandbox.git"
+    "url": "git+https://github.com/albertnis/ir-codes.git"
   },
   "author": "Albert Nisbet",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/albertnis/ir-sandbox/issues"
+    "url": "https://github.com/albertnis/ir-codes/issues"
   },
-  "homepage": "https://github.com/albertnis/ir-sandbox#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/albertnis/ir-codes#readme",
+  "devDependencies": {
+    "@types/bun": "^1.1.11",
+    "prettier": "^3.3.3"
+  }
 }
