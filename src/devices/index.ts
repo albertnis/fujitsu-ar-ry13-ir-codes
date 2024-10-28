@@ -1,4 +1,4 @@
-import { arRy13StateSchema, fujitsuArRy13 } from './fujitsu/ar-ry13'
+import { fujitsuArRy13 } from './fujitsu/ar-ry13'
 import { z, ZodType } from 'zod'
 
 export interface IrDevice<DeviceState> {
@@ -6,7 +6,7 @@ export interface IrDevice<DeviceState> {
   getProntoCodeForState: (state: DeviceState) => string
 }
 
-export const anyDeviceStateSchema = arRy13StateSchema
+export const anyDeviceStateSchema = fujitsuArRy13.stateSchema
 
 type DeviceName = z.infer<typeof anyDeviceStateSchema>['device']
 export const deviceRegistry: Record<DeviceName, IrDevice<any>> = {
