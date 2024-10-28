@@ -78,5 +78,5 @@ Send the state as query parameters to the `GET /code` endpoint. All requests mus
 The remaining parameters must match the device-specific schema. For example, a valid request for the Fujitsu AR-RY13 heat pump might look like:
 
 ```bash
-http://localhost:8080/code?format=broadlink=device=fujitsu-ar-ry13&temperatureCelsius=18&mode=heat&fanSpeed=quiet&swing=off&previousPower=off&power=on
+http://localhost:8080/code?format=broadlink&device=fujitsu-ar-ry13&temperatureCelsius=18&mode=heat&fanSpeed=quiet&swing=off&previousPower=off&power=on
 ```
