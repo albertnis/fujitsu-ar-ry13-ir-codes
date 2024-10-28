@@ -2,10 +2,10 @@
   "name": "ir-codes",
   "version": "1.0.0",
   "description": "Abrams' document has zero bit swapped with one bit. In reality one bit is 0010 002E and zero bit is 0010 0010.",
-  "main": "src-js/server.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "bun test",
-    "start": "bun src-js/server.js"
+    "start": "bun src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,13 @@
   },
   "homepage": "https://github.com/albertnis/ir-codes#readme",
   "devDependencies": {
-    "@types/bun": "^1.1.11",
+    "@types/bun": "latest",
     "prettier": "^3.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
   }
 }
