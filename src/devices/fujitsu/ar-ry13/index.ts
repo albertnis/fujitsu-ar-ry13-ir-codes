@@ -1,6 +1,6 @@
 import { z } from 'zod'
-import type { IrDevice } from '..'
-import { addProntoMetadata, makeFujitsuPayload } from '../../fujitsu'
+import type { IrDevice } from '../..'
+import { addProntoMetadata, makeFujitsuPayload } from '../../../fujitsu'
 
 const frequency: number = 39e3
 const leader: Uint8Array = new Uint8Array([0x7c, 0x3e])
@@ -17,7 +17,6 @@ export const arRy13StateSchema = z
       }),
       z.object({
         power: z.literal('on'),
-
         mode: z.enum(['auto', 'cool', 'dry', 'fan_only', 'heat']),
         temperatureCelsius: z.enum([
           '16',
