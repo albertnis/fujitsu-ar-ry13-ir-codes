@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { anyDeviceStateSchema, deviceRegistry } from '../devices'
-import { pronto2broadlink } from '../pronto2broadlink'
+import { pronto2broadlink } from '../mappers/pronto2broadlink'
 
 type Output =
   | {

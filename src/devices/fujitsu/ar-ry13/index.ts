@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import type { IrDevice } from '../..'
-import { addProntoMetadata, makeFujitsuPayload } from '../../../fujitsu'
+import { addProntoMetadata, makeFujitsuPayload } from './payload'
 
 const frequency: number = 39e3
 const leader: Uint8Array = new Uint8Array([0x7c, 0x3e])

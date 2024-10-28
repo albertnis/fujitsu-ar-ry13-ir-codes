@@ -1,5 +1,5 @@
 import { expect, it } from 'bun:test'
-import { makeChecksum } from './makeChecksum'
+import { makeChecksum } from './checksum'
 
 it('generates the expected checksum', () => {
   const codes = [

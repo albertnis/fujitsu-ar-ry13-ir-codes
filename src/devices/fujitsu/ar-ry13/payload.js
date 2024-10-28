@@ -1,4 +1,4 @@
-import { makeChecksum } from './makeChecksum'
+import { makeChecksum } from './checksum'
 
 const TEMPERATURE = {
   16: 0x0,

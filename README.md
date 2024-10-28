@@ -10,9 +10,11 @@ Codes can be generated in pronto or BroadLink formats.
 
 The repo is structured to support many devices. Each device definition is represented by a directory which contains three items:
 
-- A zod schema representing the state which is used to build a code (effectively, the state which would normally be retained by the manufacturer's remote)
-- A function which takes in a desired state and outputs a pronto code
-- A device-specific README describing any reverse-engineering notes or caveats
+- In `index.ts`:
+  - A zod schema representing the state which is used to build a code (effectively, the state which would normally be retained by the manufacturer's remote)
+  - A function which takes in a desired state and outputs a pronto code
+- In `README.md`
+  - A device-specific README describing any reverse-engineering notes or caveats
 
 For convenience, here is a list of supported devices:
 
@@ -52,7 +54,7 @@ docker build -t ir-codes .
 <td>
 
 ```bash
-bun run
+bun start
 ```
 
 </td>
